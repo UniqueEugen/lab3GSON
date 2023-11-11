@@ -1,28 +1,32 @@
 package entity;
-
+import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
-public class Animal {
-    private String type;
-    private double price;
+
+public class Staff {
+
+    private String name;
+    private int age;
     private String[] position;
     private List<String> skills;
     private Map<String, BigDecimal> salary;
 
-    public String getType() {
-        return type;
+    public String getName() {
+        return name;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getPrice() {
-        return price;
+    public int getAge() {
+        return age;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String[] getPosition() {
@@ -48,8 +52,8 @@ public class Animal {
     @Override
     public String toString() {
         return "Staff{" +
-                "name='" + type + '\'' +
-                ", age=" + price +
+                "name='" + name + '\'' +
+                ", age=" + age +
                 ", position=" + Arrays.toString(position) +
                 ", skills=" + skills +
                 ", salary=" + salary +
@@ -59,5 +63,6 @@ public class Animal {
     public void setSalary(Map<String, BigDecimal> salary) {
         this.salary = salary;
     }
+
 
 }
